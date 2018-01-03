@@ -23,6 +23,11 @@ Po wejściu w tryb komend należy wybrać jedną z poniższych opcji:
 | :--- | :--- |
 | C | tworzenie nowego okna w danym screenie |
 | shift + " | lista okien w screenie |
+| [ | Przełączenie w tryb kursora, możliwe scrollowanie |
+
+
+
+
 
 
 
