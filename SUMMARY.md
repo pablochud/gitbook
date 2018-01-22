@@ -5,4 +5,6 @@
 * [Celery](celery.md)
 * [GIT](git.md)
 * [Archiwizacja TAR](archiwizacja-tar.md)
+* Redis
+* Postgres
 
