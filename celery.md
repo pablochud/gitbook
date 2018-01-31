@@ -2,7 +2,7 @@
 (Stara wersja celery z użyciem pakietu celeryd)
 Uruchamianie dwóch workerów celery
 `./manage.py celeryd multi start 2 -B -l info`
-`./manage.py celeryd -B -l info --concurrency=4`
+`./manage.py celeryd -B -E -l info --concurrency=4`
 
 
 ?:
