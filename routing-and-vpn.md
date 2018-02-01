@@ -1,6 +1,6 @@
 Badanie trasy pakietów w sieci IP:
+(Wysyłany jest pakiet w celu określenia informacji na temat kolejnych routerach)
 `traceroute google.pl`
-> Wysyłany jest pakiet w celu określenia informacji na temat kolejnych routerach
 Tablica trasowaania pakietów sieciowych:
 `route`
 Usuwanie pozycji z tablicy trasowania:

@@ -6,7 +6,7 @@
 * [GIT](git.md)
 * [Archiwizacja TAR](archiwizacja-tar.md)
 * Redis
-* Postgres
+* [Postgres](postgres.md)
 * [Routing & VPN](routing-and-vpn.md)
 * [Pozostałe](pozostale.md)
 
