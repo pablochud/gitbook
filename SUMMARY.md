@@ -7,4 +7,6 @@
 * [Archiwizacja TAR](archiwizacja-tar.md)
 * Redis
 * Postgres
+* [Routing & VPN](routing-and-vpn.md)
+* [Pozostałe](pozostale.md)
 
