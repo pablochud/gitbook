@@ -1,4 +1,7 @@
-tablica trasowaania pakietów sieciowych:
+Badanie trasy pakietów w sieci IP:
+`traceroute google.pl`
+> Wysyłany jest pakiet w celu określenia informacji na temat kolejnych routerach
+Tablica trasowaania pakietów sieciowych:
 `route`
 Usuwanie pozycji z tablicy trasowania:
 `ip route del default via 192.168.43.1`
