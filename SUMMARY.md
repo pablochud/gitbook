@@ -9,4 +9,6 @@
 * [Postgres](postgres.md)
 * [Routing & VPN](routing-and-vpn.md)
 * [Pozostałe](pozostale.md)
+* SSH
+* GPG
 
