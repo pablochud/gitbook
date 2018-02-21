@@ -13,3 +13,6 @@ wypakowanie archiwum:
 tar -xzvf <file_name>.gz
 tar -xzvf <file_name>.gz -C /tmp/
 ```
+```
+tar xf initial_fixtures.tar.xz
+```
