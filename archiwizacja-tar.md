@@ -4,6 +4,10 @@ utworzenie archiwum:
 ```
 tar -czvf <file_name>.gz /path/to/file
 ```
+J to --xz
+```
+tar cJf <file_name>.xz /path/to/file
+```
 wypakowanie archiwum:
 ```
 tar -xzvf <file_name>.gz
