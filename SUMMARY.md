@@ -11,5 +11,5 @@
 * [Pozostałe](pozostale.md)
 * SSH
 * GPG
-* Connectivity
+* [Connectivity](connectivity.md)
 
