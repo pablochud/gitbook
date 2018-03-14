@@ -12,6 +12,9 @@ _Poniżej przykłady użycia:_
 `docker run -p 4000:80 <imagename>`
 `docker run --name <containername> -p 80:80 <imagename>`
 `docker run --name <contname> --link some-redis:redis -d -p 80:80 <imgname>`
+##### Uruchamianie kontenera w trybie interactive #####
+`docker run --rm -it -p 4000:80 <imgname> bash`
+`docker exec -it <containerIDorName> bash`
 
 ## Zarządzanie serwisami, czyli STACK ##
 Na przykładzie `docker-compose.yml`
