@@ -13,7 +13,7 @@ Aktulane realizowany task w kolejce:
 
 Lista tasków oczekujących w kolejce:
 `celery -A toolsv4 inspect reserved`
-?"
+?:
 `celery -A toolsv4 status`
 
 Pozostałe:

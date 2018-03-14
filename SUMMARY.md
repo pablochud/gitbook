@@ -9,7 +9,8 @@
 * [Postgres](postgres.md)
 * [Routing & VPN](routing-and-vpn.md)
 * [Pozostałe](pozostale.md)
-* SSH
-* GPG
+* [SSH](ssh.md)
+* [GPG](gpg.md)
 * [Connectivity](connectivity.md)
+* [Docker](docker.md)
 
