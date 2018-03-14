@@ -12,9 +12,7 @@ przykład generowania haseł za pomocą bieżącej daty i szyfrowania
 ### Logowanie procesów do pliku
 
 ```
-while true; do (echo "%CPU %MEM ARGS $(date)" && ps 
--e -o pcpu,pmem,args --sort=pcpu | cut -d" " -f1-5 | 
-tail) > ps.log; sleep 5; done
+while true; do (echo "%CPU %MEM ARGS $(date)" && ps -e -o pcpu,pmem,args --sort=pcpu | cut -d" " -f1-5 |tail) > ps.log; sleep 5; done
 ```
 
 ### Grepowanie z wyrażeniami regularnymi
