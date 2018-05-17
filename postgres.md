@@ -21,3 +21,11 @@ r - Możliwość tworzenia ról
 `createdb -T <szablon> -O <właściciel> <nowa_baza>`  
 _\(np. createdb -T toolsv4 -O toolsv5 toolsv5\)_
 
+##### Zmiana hasła dla użytkownika
+
+`SQL> alter user toolsv4 with password 'toolsv4';`
+
+```
+pozwól użytkownikowi toolsv4 się połączyć lokalnie (w pg_hba.conf)::
+- local toolsv4 toolsv4 md5
+```
