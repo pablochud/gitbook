@@ -9,11 +9,15 @@ dumping tabeli django\_content\_type
 `psql toolsv4_firmy < /tmp/django_content_type.sql`
 
 ##### Stworzenie Użytkownika
-`createuser -D -S -r toolsv5`
-gdzie:
-D - brak możliwości tworzenia baz
-S - nie jest superuserem
+
+`createuser -D -S -r toolsv5`  
+gdzie:  
+D - brak możliwości tworzenia baz  
+S - nie jest superuserem  
 r - Możliwość tworzenia ról
+
 ##### Stworzenie bazy
-`createdb -T <szablon> -O <właściciel> <nowa_baza>`
-(np. createdb -T toolsv4 -O toolsv5 toolsv5)
+
+`createdb -T <szablon> -O <właściciel> <nowa_baza>`  
+_\(np. createdb -T toolsv4 -O toolsv5 toolsv5\)_
+
