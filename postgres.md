@@ -29,3 +29,6 @@ _\(np. createdb -T toolsv4 -O toolsv5 toolsv5\)_
 pozwól użytkownikowi toolsv4 się połączyć lokalnie (w pg_hba.conf)::
 - local toolsv4 toolsv4 md5
 ```
+
+
+
