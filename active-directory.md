@@ -1,3 +1,15 @@
+```
+ldapsearch -x -h 192.168.1.46  \
+
+-D "uid=robert.wieczorek,ou=People,dc=mga,dc=com,dc=pl" \
+-W     -b "ou=People,dc=mga,dc=com,dc=pl"  \
+-s sub "(cn=*Ożarowski*)"
+```
+h to adres serwera
+D to bind name (czyli kto pyta)
+-b to w jakiej gałęzi drzewa szukanie będzie
+
+
 LDAP Expiring Passwords
 
 ```python
@@ -80,5 +92,7 @@ def print_users_with_expiring_password():
 
 if __name__ == "__main__":
     print_users_with_expiring_password()
-    
 ```
+
+
+
