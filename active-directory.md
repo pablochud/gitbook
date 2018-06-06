@@ -8,7 +8,7 @@ ldapsearch -x -h 192.168.1.46  \
 
 h to adres serwera  
 D to bind name \(czyli kto pyta\)  
-cn to common name
+cn to common name  
 -b to w jakiej gałęzi drzewa szukanie będzie
 
 ##### Inaczej:
@@ -100,6 +100,7 @@ if __name__ == "__main__":
 ```
 
 ### Przykład interefejsu Ldap
+
 ```python
 from django.conf import settings
 from django.contrib.auth import get_user_model
@@ -208,3 +209,6 @@ class Ldap(object):
         else:
             return None
 ```
+
+
+
