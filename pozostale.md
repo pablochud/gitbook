@@ -1,4 +1,4 @@
-while true; do \(echo "%CPU %MEM ARGS $\(date\)" && ps   
+while true; do \(echo "%CPU %MEM ARGS $\(date\)" && ps  
 -e -o pcpu,pmem,args --sort=pcpu \| cut -d" " -f1-5 \|  
 tail\) &gt; ps.log; sleep 5; doneOtworzenie loga systemu:  
 `:/var/log$ dmesg`  
@@ -25,3 +25,17 @@ grep -iE '^od\_faktury\|\[\[:space:\]\]od\_faktury' -r forms/
  `echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile`  
  następnie trzeba załadować zmodyfikowany plik do obecnego terminala
 
+
+
+
+
+select DBMS_METADATA.GET_DDL (
+object_type     => 'PACKAGE',
+name            => 'DEKL_IMPORT',
+schema          => 'F_JSP')
+from dual;
+
+ldapsearch -x -h 192.168.1.46  \
+-D "uid=robert.wieczorek,ou=People,dc=mga,dc=com,dc=pl" \
+-W     -b "ou=People,dc=mga,dc=com,dc=pl"  \
+-s sub "(cn=*Ożarowski*)"
