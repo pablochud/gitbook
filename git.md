@@ -25,3 +25,8 @@ Usuwanie branch'y już nieaktulanych z lokalnego repo, wpier wykonać należy po
 ```
 git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
 ```
+Ustawienie powyższczego rozwiązania jako alias w globalnego konfiguracji. Plik `~/.gitconfig`
+```
+[alias]
+        cleanb = !sh -c \"git branch -vv\" | grep \"origin/.*: gone]\" | awk '{print $1}' | xargs git branch -D
+```
