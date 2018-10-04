@@ -17,4 +17,11 @@ wymuszenie aktualizacji repo zdalnego
 ```
 git remote update origin --prune
 ```
-
+Odczepienie wiązań branchy już nieinstiejących w zdalnym repo
+```
+git remote prune origin 
+```
+Usuwanie branch'y już nieaktulanych z lokalnego repo, wpier wykonać należy powyższą metodę
+```
+git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
+```
