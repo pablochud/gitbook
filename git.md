@@ -30,3 +30,8 @@ Ustawienie powyższczego rozwiązania jako alias w globalnego konfiguracji. Plik
 [alias]
         cleanb = !sh -c \"git branch -vv\" | grep \"origin/.*: gone]\" | awk '{print $1}' | xargs git branch -D
 ```
+#### Mergowanie nowych zmian ze zdalnego repozytorium
+z akceptacją zmian przychodzących
+```
+git pull -s recursive -X theirs <remoterepo>
+```
