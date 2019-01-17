@@ -35,3 +35,12 @@ z akceptacją zmian przychodzących
 ```
 git pull -s recursive -X theirs <remoterepo>
 ```
+#### Przywrócenie commita
+cofnięcie do nie spushowanego commita:
+```
+git reset HEAD~
+```
+zresetowanie zmian do ostatniego commita z gałęzi:
+```
+git reset --hard origin/test
+```
