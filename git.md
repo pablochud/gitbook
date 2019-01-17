@@ -36,7 +36,7 @@ z akceptacją zmian przychodzących
 git pull -s recursive -X theirs <remoterepo>
 ```
 #### Przywrócenie commita
-cofnięcie do nie spushowanego commita:
+cofnięcie do niespushowanego commita:
 ```
 git reset HEAD~
 ```
