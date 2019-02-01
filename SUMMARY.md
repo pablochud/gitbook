@@ -5,7 +5,7 @@
 * [Celery](celery.md)
 * [GIT](git.md)
 * [TAR](archiwizacja-tar.md)
-* Redis
+* [Redis](redis.md)
 * [Postgres](postgres.md)
 * [Routing & VPN](routing-and-vpn.md)
 * [Pozostałe](pozostale.md)

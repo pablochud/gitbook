@@ -1,6 +1,15 @@
-while true; do \(echo "%CPU %MEM ARGS $\(date\)" && ps  
--e -o pcpu,pmem,args --sort=pcpu \| cut -d" " -f1-5 \|  
-tail\) &gt; ps.log; sleep 5; doneOtworzenie loga systemu:  
+### Uprawnienia użytkownika do wywoływania komend bez sudo
+uruchomić komendę `visudo`
+```bash
+# Cmnd alias specification
+Cmnd_Alias RESTART_EBOK_DEVEL = /usr/local/bin/supervisorctl restart dev\:toolsv4gunicorn_dev
+
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+toolsv4dev ALL=(ALL) NOPASSWD: RESTART_EBOK_DEVEL
+```
+### Szukanie paczek zainstalowanych
+Otworzenie loga systemu:  
 `:/var/log$ dmesg`  
 Sprawdzenie zainstalowanych pakietów na przykładzie "network-manager-openvpn":  
 `sudo apt-cache search network-manager-openvpn`
