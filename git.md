@@ -1,4 +1,13 @@
 # GIT
+#### Squashowanie commitów
+squash ostatnich 5 commitów:
+```
+rebase -i HEAD~5
+```
+squash do konkretnego commita:
+```
+git rebase -i <after-this-commit>
+```
 #### Usuwanie gałęzi
 gałąź zdalna:
 ```
