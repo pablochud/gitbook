@@ -52,7 +52,7 @@ albo:
 xargs rm -rf < 1.txt
 ```
 
-
+### ----------
 
 select DBMS\_METADATA.GET\_DDL \(  
 object\_type     =&gt; 'PACKAGE',  
