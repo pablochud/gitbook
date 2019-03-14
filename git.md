@@ -53,7 +53,8 @@ git merge --allow-unrelated-histories project-a/master # or whichever branch you
 git remote remove project-a
 ```
 `--allow-unrelated-histories parameter only exists since git >= 2.9`
-`--tags in order to keep tags.`#### Przywrócenie commita
+`--tags in order to keep tags.`
+#### Przywrócenie commita
 cofnięcie do niespushowanego commita:
 ```
 git reset HEAD~
