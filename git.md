@@ -44,7 +44,16 @@ z akceptacją zmian przychodzących
 ```
 git pull -s recursive -X theirs <remoterepo>
 ```
-#### Przywrócenie commita
+#### Mergowanie z Projektu-a do Projektu-b
+```
+cd path/to/project-b
+git remote add project-a path/to/project-a
+git fetch project-a --tags
+git merge --allow-unrelated-histories project-a/master # or whichever branch you want to merge
+git remote remove project-a
+```
+`--allow-unrelated-histories parameter only exists since git >= 2.9`
+`--tags in order to keep tags.`#### Przywrócenie commita
 cofnięcie do niespushowanego commita:
 ```
 git reset HEAD~
