@@ -63,3 +63,16 @@ zresetowanie zmian do ostatniego commita z gałęzi:
 ```
 git reset --hard origin/test
 ```
+#### Tagowanie i współdzielenie
+Tworzenie etykiety z opisem:
+```
+git tag -a v1.4 -m 'my version 1.4'
+```
+Następne wypychamy etykiete
+```
+git push origin v1.4
+```
+Jeśli masz mnóstwo tagów, którymi chciałbyś się podzielić z innymi, możesz je wszystkie wypchnąć jednocześnie dodając do git push opcję `--tags`. W ten sposób zostaną przesłane wszystkie tagi, których nie ma jeszcze na serwerze.
+```
+git push origin --tags
+```
