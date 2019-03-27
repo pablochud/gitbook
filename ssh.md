@@ -18,3 +18,11 @@ Ręczne dopisywanie klucza publicznego do kluczy autoryzowanych na serwerze:
 ```
 cat upload_key.pub >> ~/.ssh/authorized_keys
 ```
+
+Przejrzenie fingerprintsów kluczy można wykonań poleceniem (następnie porównać je z kluczami na gitlabie):
+
+`-l` wylistuj zamiast generuj nowy klucz, `-f` wskazanie pliku
+```
+$ ssh-keygen -lf /path/to/ssh/key
+
+```
