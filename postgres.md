@@ -20,6 +20,14 @@ r - Możliwość tworzenia ról
 
 `createdb -T <szablon> -O <właściciel> <nowa_baza>`  
 _\(np. createdb -T toolsv4 -O toolsv5 toolsv5\)_
+stworzy tak naprawdę kopie bazy toolsv4 wraz z kontami użytkowników
+czystą bazę z podstawową strukturą przygotowaną przez postgress wywołać należy przez szablon **template0**
+
+po skopiowaniu bazy z **toolsv4** właścicielem wszystkich istniejących tabel jest "toolsv4", należy to zmienić po przez:
+
+`SQL> REASSIGN OWNED BY <oldusername> TO <newusername>;`
+opcjonalnie (jeśli baza stworzona od zera):
+`SQL> GRANT ALL PRIVILEGES ON DATABASE <dbname> to <username>;`
 
 ##### Zmiana hasła dla użytkownika
 
