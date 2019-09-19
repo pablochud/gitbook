@@ -1,4 +1,4 @@
-Constaint check typu `in (wartosc1, wartosc2, ...)` sprawdza jedynie wartości w przypadku, gdy nie są nullami w nowym rekordzie. (czyli umożliwia wprowadzenie nulla pomimo utworzonego constraina)  
+Constaint `check` typu `in (wartosc1, wartosc2, ...)` sprawdza jedynie wartości w przypadku, gdy nie są nullami w nowym rekordzie. (czyli umożliwia wprowadzenie nulla pomimo utworzonego constraina)  
 
 Przy wprowadzaniu constrainów typu Unique - \(typem takim jest również PRIMARY KEY\) automatycznie zakładany jest index. Można wymusić by dla kolumny z constrain unique index nie był typu unique.
 
