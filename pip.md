@@ -56,6 +56,19 @@ python -m pip download \
    --implementation py \
    SomePackage
 ```
+gdyby python nie zawierał modułu `pip`
+```
+sudo apt-get install python3-pip
+```
+Wylistować kompatybilne tagi z kompilatorem
+```
+from pip import pep425tags
+print(pep425tags.supported_tags)
+```
+test
+```
+python3 -m pip install reportlab==3.5.23 --download="./whl" --platform any --python-version none --implementation py3
+```
 
 * **Przerzucanie paczek**
 
