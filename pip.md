@@ -55,3 +55,9 @@ python -m pip download \
    --implementation py \
    SomePackage
 ```
+
+* **Przerzucanie paczek**
+Paczki najlepiej przesyłać `rsync` zamiast `scp`
+```
+rsync -rvz -e 'ssh -p <port>' --progress ./whl root@<host>:/tmp
+```
