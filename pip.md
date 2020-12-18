@@ -2,6 +2,7 @@
 Podanie źródła paczek
 ```
 pip install --no-index --find-links ./nowy/ -r ./nowy/requirements.txt
+pip install <paczka> --no-index --find-links <path>
 ```
 `--find-links`: podaje ścieżke, w której znajdzie paczki
 
@@ -57,6 +58,7 @@ python -m pip download \
 ```
 
 * **Przerzucanie paczek**
+
 Paczki najlepiej przesyłać `rsync` zamiast `scp`
 ```
 rsync -rvz -e 'ssh -p <port>' --progress ./whl root@<host>:/tmp
