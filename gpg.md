@@ -1,19 +1,44 @@
-Sciągnięcie klucza publicznego z sewera:
-`gpg --keyserver pgp.mit.edu --search-keys pawel.chudziak@mga.com.pl`
+#### Export Public Key
 
-`gpg --keyserver pgp.mit.edu --recv-keys <id_klucza>`
+This command will export an ascii armored version of the public key:
+```
+gpg --output public.pgp --armor --export username@email
+```
+```
+gpg --armor --export <podany_klucz> > public.key
+```
 
-Wysłanie klucza publicznego do serwera:
-`gpg --keyserver pgp.mit.edu --send-key <id_klucza>`
+#### Export Secret Key
 
-Zakodowanie pliku kluczem:
-`gpg -o <plik_wyjsciowy> -r <podanie_klucza> -e <plik_do_enkrypcji>`
+This command will export an ascii armored version of the secret key:
+```
+gpg --output private.pgp --armor --export-secret-key username@email
+```
 
-Odkodowanie pliku:
-`gpg -d <plik.gpg>`
+#### Sciągnięcie klucza publicznego z sewera:
+```
+gpg --keyserver pgp.mit.edu --search-keys pawel.chudziak@mga.com.pl
+```
 
-eksport klucza do pliku:
-`gpg --export -a <podany_klucz> > public.key`
+```
+gpg --keyserver pgp.mit.edu --recv-keys <id_klucza>
+```
+
+#### Wysłanie klucza publicznego do serwera:
+```
+gpg --keyserver pgp.mit.edu --send-key <id_klucza>
+```
+
+#### Zakodowanie pliku kluczem:
+```
+gpg -o <plik_wyjsciowy> -r <podanie_klucza> -e <plik_do_enkrypcji>
+```
+
+#### Odkodowanie pliku:
+```
+gpg -d <plik.gpg>
+```
+
 
 gpg --list-secret-keys
 gpg -k
