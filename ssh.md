@@ -1,3 +1,12 @@
+#### Dodanie passphrase do klucza
+```
+openssl rsa -aes256 -in your.key -out your.encrypted.key
+```
+wówczas łączymy się z serwerem
+```
+ssh -i [ścieżka_do_klucza] user@server
+```
+
 #### Generownie klucza prywatnego/publicznego
 Tworzenie klucza w najprostrzej formie:
 ```
