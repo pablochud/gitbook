@@ -1,4 +1,5 @@
 ## Aktualizacja zmian w supervisorze
+
 1. Dokonujemy zmian w pliku konfiguracyjnym dla jakiejś usługi
 2. Nastepnie ładujemy nowe zmiany
 `supervisorctl reread`
