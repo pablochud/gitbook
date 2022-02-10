@@ -1,4 +1,15 @@
-Constaint `check` typu `in (wartosc1, wartosc2, ...)` sprawdza jedynie wartości w przypadku, gdy nie są nullami w nowym rekordzie. (czyli umożliwia wprowadzenie nulla pomimo utworzonego constraina)  
+#### DBLink
+```sql
+CREATE DATABASE LINK prod
+  CONNECT TO <user> IDENTIFIED BY <haslo>
+  USING '(DESCRIPTION=
+              (ADDRESS=(PROTOCOL=TCP)(HOST=...)(PORT=...))
+              (CONNECT_DATA=(SERVICE_NAME=...))
+          )';
+```
+#### Constraint
+
+Constraint `check` typu `in (wartosc1, wartosc2, ...)` sprawdza jedynie wartości w przypadku, gdy nie są nullami w nowym rekordzie. (czyli umożliwia wprowadzenie nulla pomimo utworzonego constraina)  
 
 Przy wprowadzaniu constrainów typu Unique - \(typem takim jest również PRIMARY KEY\) automatycznie zakładany jest index. Można wymusić by dla kolumny z constrain unique index nie był typu unique.
 
@@ -29,7 +40,7 @@ select * from table(dbms_xplan.display);
 DELETE nie zwolni przestrzeni. jedynie truncate zwolni \(ale tylko do tablespace'a\), jeżeli użyjesz delete to wolne miejsce będzie mogła użyć jedynie ta sama tabela \(bo HWM \(High water Mark\) nie zostanie zmieniony\)  
 
 
-dr`op table XXX purge`
+`drop table XXX purge`
 
 albo
 
