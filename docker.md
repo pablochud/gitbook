@@ -16,6 +16,9 @@ _Poniżej przykłady użycia:_
 `docker run --rm -it -p 4000:80 <imgname> bash`
 `docker exec -it <containerIDorName> bash`
 
+##### Zapisywanie stanu kontenera jako osobny obraz #####
+`docker commit <containerIDorName> <imagename>`
+
 ## Zarządzanie serwisami, czyli STACK ##
 Na przykładzie `docker-compose.yml`
 ```
